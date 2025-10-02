@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <a href="redpill.html" class="pill red-pill">Software Developer</a>
+    </div>
+    <div class="container">
+      <nav class="navbar">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-minus" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-plus" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p class="para">Photographer</p>
+        <h1 class="heading">Hi, I'm <span>Souard</span> from Bengaluru</h1>
+      </div>
+    </div>
+
+    <!-- -----------about---------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="goa-5.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              As a versatile creative professional, I specialize in photography,
+              videography, and graphic design, crafting visually compelling
+              stories that resonate with diverse audiences. With a keen eye for
+              detail and a passion for innovation, I bring ideas to life through
+              dynamic visuals and engaging content. My experience spans creative
+              direction, client collaboration, and technical expertise to
+              deliver impactful results. Driven by creativity and excellence, I
+              strive to make every project uniquely memorable.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Post Processing Softwares</span><br />Adobe Lightroom
+                  and Photoshop, DaVinci Resolve.
+                </li>
+
+                <li>
+                  <span>Photography Techniques</span><br />Automotive, Real
+                  Estate, Model, Travel, Product.
+                </li>
+
+                <li>
+                  <span>Lighting Knowledge</span><br />Natural lighting, studio
+                  lighting setups, and light manipulation.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2023 - 2025</span><br />Nomadic Studio</li>
+
+                <li><span>2022</span><br />India Hikes</li>
+
+                <li><span>2021</span><br />Freelance Photographer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2024</span><br />B.E at Ramaiah Institute of Technology
+                </li>
+
+                <li><span>2019</span><br />Sri Chaitanyia</li>
+
+                <li><span></span><br /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------services---------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Photography</h2>
+            <p>
+              I specialize in capturing moments that tell compelling stories.
+              From creative concepts to client management, I deliver
+              personalized services that align with each project’s vision. My
+              expertise spans diverse styles, ensuring every shot reflects
+              authenticity and artistry, whether for portraits, events, or brand
+              storytelling.
+            </p>
+            <a href="#">learn more!</a>
+          </div>
+          <div>
+            <h2>Videography</h2>
+            <p>
+              I bring stories to life through dynamic videography, creating
+              visually engaging content tailored to your vision. From
+              conceptualizing ideas to editing the final cut, my work captures
+              moments and conveys messages that resonate with audiences, whether
+              for personal projects, corporate videos, or social media content.
+            </p>
+            <a href="#">learn more!</a>
+          </div>
+          <div>
+            <h2>Graphic Design</h2>
+            <p>
+              With a keen eye for detail and creativity, I design visuals that
+              stand out. My graphic design services cover branding, promotional
+              materials, and digital content, ensuring every element aligns with
+              your message and captures the essence of your identity.
+            </p>
+            <a href="#">learn more!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- portfolio ----------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <a href="automotive.html">
+            <div class="work">
+              <img src="gt3rs.jpg" />
+              <div class="layer">
+                <h3>Automotive</h3>
+              </div>
+            </div>
+          </a>
+
+          <a href="travel.html">
+            <div class="work">
+              <img src="dd-17.jpg" />
+              <div class="layer">
+                <h3>Travel</h3>
+              </div>
+            </div>
+          </a>
+
+          <a href="people.html">
+            <div class="work">
+              <img src="DSC_0280.jpg" />
+              <div class="layer">
+                <h3>People</h3>
+              </div>
+            </div>
+          </a>
+
+          <a href="real.html">
+            <div class="work">
+              <img src="leela house-26.jpg" />
+              <div class="layer">
+                <h3>Real Estate</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------contact------------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> souardbl1738@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 8618656926</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/souard_/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <!-- <a href="" class="btn btn2 ">Download CV</a> -->
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Souard. Made with by Souard BL</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwkHNWJ6u7iXpV2o3NHftD8_YfnsSdjdV2cKydYtnxOHzQAXLAsqTyHR72XEg2HN--o/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent succesfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
